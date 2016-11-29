@@ -4,7 +4,7 @@ import happybase
 
 connection = happybase.Connection('hadoop-master')
 print(connection.tables())
-table = connection.table('emp')
+table = connection.table('user')
 
-table.put('1',{'personal data': 'Renjith'},{'professional data': 'Renjith'})
+table.put('1',{'first_name': 'Renjith'},{'last_name': 'Raj'})
 print(table.row('1')) # {'f1:': 'hello'}
