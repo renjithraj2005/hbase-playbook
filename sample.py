@@ -6,5 +6,5 @@ connection = happybase.Connection('hadoop-master')
 print(connection.tables())
 table = connection.table('user')
 
-table.put('1',{'first_name': 'Renjith'},{'last_name': 'Raj'})
+table.put('1',{'first_name': 'Renjith','last_name': 'Raj'})
 print(table.row('1')) # {'f1:': 'hello'}
